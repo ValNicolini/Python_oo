@@ -1,13 +1,14 @@
 from Modelos.Restaurante import Restaurante
+from Modelos.Cardapio.Bebida import Bebida
 
-restaurante_praca =Restaurante('Cantina', 'Italiana')
-restaurante_praca.receber_avaliacao('Val', 5)
-restaurante_praca.receber_avaliacao('Gica', 2)
-restaurante_praca.receber_avaliacao('Katia', 0)
-# restaurante_mexicano = Restaurante('mexicano food', 'mexicano')
-# restaurante_japones = Restaurante('Japa', 'japonesa')
+from Modelos.Cardapio.Prato import Prato
+
+# restaurante_praca =Restaurante('Cantina', 'Italiana')
+bebida_suco = Bebida('Suco de Melancia', 5.0, 'Grande')
+# prato = Prato('Lanche', 17, 'Misto Quente')
 def main():
-    Restaurante.listar_restaurantes()
+   print(bebida_suco)
+   # print(prato)
 
 
 

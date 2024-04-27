@@ -1,4 +1,5 @@
 from Modelos.Avaliacao import Avaliacao
+from Cardapio.Item_cardapio import Itemcardapio
 class Restaurante:
     restaurantes = []
 
@@ -7,6 +8,7 @@ class Restaurante:
         self.categoria = categoria.upper()
         self._ativo = False
         self._avaliacao = []
+        
         Restaurante.restaurantes.append(self)
 
     def __str__(self):
