@@ -1,4 +1,4 @@
-
+from flask import Flask
 from fastapi import FastAPI, Query
 import requests
 
@@ -9,7 +9,7 @@ def hello_word():
     '''
     Endpoint q exibe a mensagem 'Hello: World
     '''
-    return {'Hello: World'}
+    return 'Hello World!'
 
 @app.get('/api/restaurantes')
 def get_restaurantes(restaurante: str=(Query(default=None))):
